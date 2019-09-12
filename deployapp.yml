@@ -12,7 +12,7 @@ spec:
         name: app-tomcat
     spec:
       containers:
-      - image: tomcat:v1
+      - image: tomcat
         name: tomcatcont
         ports:
         - name: tomcatcont
