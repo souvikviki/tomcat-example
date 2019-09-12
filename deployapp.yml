@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: app-tomacat
+  name: app-tomcat
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: app-tomcat
+    spec:
+      containers:
+      - image: tomcat:v1
+        name: tomcatcont
+        ports:
+        - name: tomcatcont
+          containerPort: 8080      
+
+
