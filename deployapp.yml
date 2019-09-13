@@ -1,5 +1,5 @@
 apiVersion: v1
-kind: ReplicationController
+kind: Deployment
 metadata:
   labels:
     name: app-tomacat
@@ -12,7 +12,7 @@ spec:
         name: app-tomcat
     spec:
       containers:
-      - image: tomcat
+      - image: gcr.io/jenkins-project-249206/tomcat
         name: tomcatcont
         ports:
         - name: tomcatcont
