@@ -7,7 +7,7 @@ spec:
     app: tom-app
   type: LoadBalancer
   ports:
-    - name: my-apache-port
+    - name: tom-port
       port: 9090
       targetPort: 8080
 
