@@ -5,15 +5,13 @@ metadata:
 spec:
   replicas: 1
   template:
-    metadata:
-      labels:
-        app: app-tomcat
+   metadata:
+    labels:
+     app: app-tomcat
     spec:
       containers:
       - image: gcr.io/jenkins-project-249206/tomcat:v1
         name: tomcatcont
         ports:
         - name: tomcatcont
-          containerPort: 8080      
-
-
+          containerPort: 8080
