@@ -1,6 +1,8 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
+  labels:
+    app: app-tomcat
  name: app-tomcat
 spec:
   replicas: 1
