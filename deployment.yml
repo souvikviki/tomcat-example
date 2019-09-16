@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-tomcat
@@ -7,7 +7,7 @@ spec:
   template:
    metadata:
     labels:
-       app: app-tomcat
+     app: app-tomcat
     spec:
       containers:
       - image: gcr.io/jenkins-project-249206/tomcat:v1
