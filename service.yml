@@ -4,7 +4,7 @@ metadata:
  name: tomcat-service
 spec:
  selector:
-  app: app-tomcat
+  app: tomcat-app
  type: LoadBalancer
  ports:
   - name: tomcat-port
